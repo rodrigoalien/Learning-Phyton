@@ -1,0 +1,16 @@
+
+Novo Usuário
+Nome: Rodrigo
+Idade: 36
+
+Novo Usuário
+Nome: Jocilene
+Idade: 35
+
+Novo Usuário
+Nome: Joao Barbosa
+Idade: 89
+
+Novo Usuário
+Nome: Rodrigo Almeida
+Idade: 36
