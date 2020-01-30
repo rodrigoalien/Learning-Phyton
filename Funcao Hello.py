@@ -1,3 +1,9 @@
+__author__ = 'Rodrigo da Cunha Almeida'
+__copyright__ = 'Copyright 2020, AlienSoft'
+__version__  = '0.91'
+__email__ = 'rodrigodacunhaalmeida@gmail.com'
+
+
 def funcao_hello(nome):
     print('Hello {}!'.format(nome))
 
@@ -22,22 +28,28 @@ def ler_dados():
     arquivo.close()
     return unica_string
 
-funcao_hello('Visual Studio Code')
+if __name__ == "__main__":
 
-funcao_hello('GitHub')
+    print('# ' + '=' * 78)
 
-funcao_hello('Testando um pool request')
+    funcao_hello('Visual Studio Code')
 
-nome = input('Qual o seu nome? ')
-idade = input('Qual sua idade? ')
-funcao_hello(nome)
+    funcao_hello('GitHub')
 
-dados = {'nome': nome, 'idade': idade}
+    funcao_hello(__name__)
 
-print('Seu nome é {} e você tem {} anos.'.format(dados['nome'], dados['idade']))
+    print('# ' + '=' * 78)
 
-if input('Gravar os dados? (s/n): ') == 's':
-    gravar_dados(dados)
+    nome = input('\nQual o seu nome? ')
+    idade = input('Qual sua idade? ')
+    funcao_hello(nome)
 
-if input('Ver registros? (s/n): ') == 's':
-    print(ler_dados())
+    dados = {'nome': nome, 'idade': idade}
+
+    print('Seu nome é {} e você tem {} anos.'.format(dados['nome'], dados['idade']))
+
+    if input('Gravar os dados? (s/n): ') == 's':
+        gravar_dados(dados)
+
+    if input('Ver registros? (s/n): ') == 's':
+        print(ler_dados())
